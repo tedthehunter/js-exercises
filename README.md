@@ -1,1 +1,1 @@
-# js-exercises
+A collection of Javascript exercises that don't fit anywhere else, as required by the Odin Project curriculum.

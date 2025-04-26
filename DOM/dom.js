@@ -29,3 +29,9 @@ newContainer.appendChild(title2);
 newContainer.appendChild(paragraph2);
 
 container.appendChild(newContainer);
+
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", function (e) {
+    e.target.style.background = "blue";
+});

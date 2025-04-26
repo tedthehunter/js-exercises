@@ -18,5 +18,14 @@ container.appendChild(title);
 
 const newContainer = document.createElement("div");
 newContainer.classList.toggle("new-container");
-newContainer.textContent = "I'm a blue h3!";
+
+const title2 = document.createElement("h1");
+title2.textContent = "I'm in a div";
+
+const paragraph2 = document.createElement("p");
+paragraph2.textContent = "ME TOO!"
+
+newContainer.appendChild(title2);
+newContainer.appendChild(paragraph2);
+
 container.appendChild(newContainer);

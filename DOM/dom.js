@@ -10,3 +10,8 @@ const paragraph = document.createElement("p");
 paragraph.style.color = "red";
 paragraph.textContent = "Hey I'm red!";
 container.appendChild(paragraph);
+
+const title = document.createElement("h3");
+title.style.color = "blue";
+title.textContent = "I'm a blue h3!";
+container.appendChild(title);

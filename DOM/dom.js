@@ -15,3 +15,8 @@ const title = document.createElement("h3");
 title.style.color = "blue";
 title.textContent = "I'm a blue h3!";
 container.appendChild(title);
+
+const newContainer = document.createElement("div");
+newContainer.classList.toggle("new-container");
+newContainer.textContent = "I'm a blue h3!";
+container.appendChild(newContainer);

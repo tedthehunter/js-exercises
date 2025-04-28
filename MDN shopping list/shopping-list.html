@@ -37,7 +37,13 @@
       const button = document.querySelector('button');
 
       button.addEventListener('click', () => {
-        const newItem = input.value;
+        const newContent = input.value;
+        input.value = '';
+
+        const newItem = document.createElement('li');
+        const newSpan = document.createElement('span');
+        const newButton = document.createElement('button');
+
         alert(newItem);
       });
 

@@ -47,12 +47,17 @@
         newItem.appendChild(newSpan);
         newItem.appendChild(newButton);
 
-        newItem.textContent = newContent;
+        newSpan.textContent = newContent;
         newButton.textContent = 'Delete';
 
         list.appendChild(newItem);
 
-        alert(newItem);
+        newButton.addEventListener('click', () => {
+          newItem.remove();
+        });
+
+        input.focus();
+
       });
 
     </script>

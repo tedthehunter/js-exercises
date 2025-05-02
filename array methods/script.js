@@ -16,6 +16,13 @@ const camelize = (string) => {
 
 //FUNCTION - accepts inputArray, lowerNum, HigherNum
     //FILTER input array 
+const filterRange = (inputArray, lowerNum, higherNum) => {
+    return inputArray.filter(function(item) {
+        if (item >= lowerNum && item <= higherNum) {
+            return item;
+        }
+    });
+}
 
 
 /* ***TEST SUITE*** */

@@ -46,5 +46,6 @@ console.log( arr2 ); // [3, 1]
 
 //EXERCISE 4
 let arr4 = [5, 2, 1, -10, 8];
-
-alert( arr4 ); // 8, 5, 2, 1, -10
+arr4.sort( (firstNum, secondNum) => secondNum - firstNum);
+arr4.reverse();
+console.log( arr4 ); // 8, 5, 2, 1, -10

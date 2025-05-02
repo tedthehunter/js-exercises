@@ -18,8 +18,12 @@ const filterRange = (inputArray, lowerNum, higherNum) => {
     return inputArray.filter(item => (item >= lowerNum && item <= higherNum));
 }
 
-const filterRangeInPlace = () => {
-
+const filterRangeInPlace = (inputArray, lowerNum, higherNum) => {
+    inputArray.map(function(item, index) {
+        if (! (item >= lowerNum && item <= higherNum)) {
+            inputArray.splice(index, 1);
+        }
+    })
 }
 
 /* ***TEST SUITE*** */
@@ -38,4 +42,4 @@ console.log( arr ); // 5,3,8,1 (not modified)
 //EXERCISE 3
 let arr2 = [5, 3, 8, 1];
 filterRangeInPlace(arr2, 1, 4); // removed the numbers except from 1 to 4
-alert( arr2 ); // [3, 1]
+console.log( arr2 ); // [3, 1]

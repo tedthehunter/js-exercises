@@ -46,6 +46,17 @@ console.log( arr2 ); // [3, 1]
 
 //EXERCISE 4
 let arr4 = [5, 2, 1, -10, 8];
-arr4.sort( (firstNum, secondNum) => secondNum - firstNum);
+arr4.sort( (firstNum, secondNum) => firstNum - secondNum);
 arr4.reverse();
 console.log( arr4 ); // 8, 5, 2, 1, -10
+
+//EXERCISE 5
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let users = [ john, pete, mary ];
+
+let names = users.forEach(item => names.push(item.name));
+
+console.log( names ); // John, Pete, Mary

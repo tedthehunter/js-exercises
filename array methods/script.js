@@ -14,10 +14,16 @@ const camelize = (string) => {
     return joinedArray;
 }
 
+//FUNCTION - accepts inputArray, lowerNum, HigherNum
+    //FILTER input array 
 
 
 /* ***TEST SUITE*** */
 
+//EXERCISE 1
 //console.log(camelize("background-color") == 'backgroundColor');
 //console.log(camelize("list-style-image") == 'listStyleImage');
 //console.log(camelize("-webkit-transition") == 'WebkitTransition');
+
+//EXERCISE 2
+//

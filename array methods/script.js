@@ -43,3 +43,8 @@ console.log( arr ); // 5,3,8,1 (not modified)
 let arr2 = [5, 3, 8, 1];
 filterRangeInPlace(arr2, 1, 4); // removed the numbers except from 1 to 4
 console.log( arr2 ); // [3, 1]
+
+//EXERCISE 4
+let arr4 = [5, 2, 1, -10, 8];
+
+alert( arr4 ); // 8, 5, 2, 1, -10

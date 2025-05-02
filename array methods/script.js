@@ -1,11 +1,17 @@
 const camelize = (string) => {
-    //SPLIT input string into array
-    //MAP function to split array
-        //FUNCTION accepts item, index as parameters, implicitly, not explicitly
-            //IF index > 0:
-            //RETURN item w/first letter capitalized
-    //JOIN array back into string
-    //RETURN string
+    let splitArray = string.split('-');
+
+    splitArray = splitArray.map(function(item, index) {
+            if (index > 0) {
+                return item.replace(item[0], item[0].toUpperCase());
+            }
+            else {
+                return item;
+            }
+        });
+    let joinedArray = splitArray.join('');
+    
+    return joinedArray;
 }
 
 console.log(camelize("background-color") == 'backgroundColor');
